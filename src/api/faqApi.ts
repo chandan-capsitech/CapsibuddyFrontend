@@ -1,7 +1,7 @@
 import axios from "axios";
 import type { StartResponse, QuestionResponse } from "../types/faq";
 
-const BACKEND = "http://localhost:5151/api/Faqs";
+const BACKEND = "https://capsibuddybackend-1.onrender.com/api/Faqs";
 
 export function startChat() {
     return axios.post<StartResponse>(`${BACKEND}/start`);
